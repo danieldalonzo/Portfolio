@@ -8,7 +8,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background-color:#acacac;
 }
 
 
@@ -61,12 +61,16 @@ footer {
   color: #ffffff;
   color: #cccccc;
   text-align: center;
-  background: #666666;
+  /* background: #666666; */
   border-top: 8px solid #464646;
   height: 50px;
 }
+#bg-dark {
+  background-color: #343a40;
+}
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -135,48 +139,85 @@ h3, h2 {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;  
+  padding: 10px;
 }
 
-/* contact page */
-
-#contact-form ul {
-  margin-bottom: 20px;
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
 }
 
-#contact-form li {
-  margin-bottom: 10px;
+@media screen and (max-width: 768px) {
+  .main-section {
+    margin: -114px 0px 400px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .work {
+    width: 302px;
+  }
+
+  .work h3 {
+    width: 90%;
+  }
+
+  .auth-image {
+    width: 358px;
+  }
+
+  .grid-container {
+    grid-template-columns: 60px;
+  }
+
+  #masthead {
+    position: static;
+    overflow: hidden;
+  }
+
+  #logo {
+    float: none;
+    padding: 50px;
+  }
+
+  #main-container {
+    padding-top: 120px;
+  }
 }
 
-label,
-input[type=text],
-input[type=email],
-textarea {
-  display: block;
-  width: 100%;
+@media screen and (max-width: 640px) {
+  nav {
+    width: 48%;
+    margin-left: 38px;
+    margin-right: 155px;
+  }
+
+  .grid-item {
+    width: 525px;
+  }
+
+  .grid-container {
+    grid-template-columns: 60px
+  }
+
+  .auth-image {
+    float: none;
+    width: inherit;
+  }
+
+  .work h3 {
+    width: 90%;
+  }
+
+  #masthead {
+    position: static;
+  }
+
+  #logo {
+    padding: inherit;
+    width: 100%;
+    float: left;
+  }
 }
-
-input[type=text],
-input[type=email],
-textarea {
-  height: 35px;
-  padding: 0 10px;
-  font-size: 14px;
-  border: 1px solid #dddddd;
-}
-
-textarea {
-  height: 200px;
-}
-
-input[type=submit] {
-  padding: 10px 30px;
-  font-size: 18px;
-  color: #ffffff;
-  cursor: pointer;
-  background: #110eb3;
-  border: 0 none;
-  float: right;
-}
-
-
